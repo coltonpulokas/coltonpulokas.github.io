@@ -2,6 +2,11 @@ body {
     margin: 0;
     font-family: Courier, monospace;
     text-align: left;
+    background-image: url('./intothemoneylandnew.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 main {
@@ -27,12 +32,6 @@ main {
         font-size: 20px;
         margin: 20px;
     }
-
-    background-image: url('./intothemoneylandnew.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 #personalinfo {
