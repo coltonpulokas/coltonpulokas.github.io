@@ -16,14 +16,28 @@ html, body {
     }
 
     #links ul {
-        margin: 0;
+        margin: 0 1rem;
         padding: 0;
         justify-content: center;
         gap: 2rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        justify-content: space-between;
     }
 
     #topbar ul {
         padding: 0 1rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        justify-content: space-between;
+    }
+
+    #personalinfo {
+        margin: 0 1rem;
     }
 }
 
