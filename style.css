@@ -1,94 +1,62 @@
 html, body {
+    width: 100%;
     margin: 0;
     font-family: Courier, monospace;
     text-align: left;
-    background-image: url('./intothemoneylandnew.jpg');
+    background-image: url('./mountains.jpg');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom right;
     background-size: cover;
     background-attachment: fixed;
+    overscroll-behavior: none;
 }
 
-@media (max-width: 768px) {
-    body {
-        background-image: url("./intothemoneylandnewmobile.jpg");
-        background-attachment: scroll;
-    }
-
-    #links ul {
-        margin: 0 1rem;
-        padding: 0;
-        justify-content: center;
-        gap: 2rem;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        list-style-type: none;
-        justify-content: space-between;
-    }
-
-    #topbar ul {
-        padding: 0 1rem;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        list-style-type: none;
-        justify-content: space-between;
-    }
-
-    #personalinfo {
-        margin: 0 1rem;
-    }
-}
-
+/* desktop */
 main {
     min-height: 100vh;
-    padding-top: 0.5rem;
     color: beige;
     h1 {
         text-align: center;
         font-size: 3rem;
         margin: 0;
     }
-    h2 {
-        margin-top: 2rem;
-        text-align: center;
-        font-size: 3rem;
-        margin-bottom: 0;
-    }
+
     p {
         text-indent: 2em;
         font-size: 1.2rem;
-        margin-bottom: 1rem;
+        gap: 1rem;
     }
 }
 
-#personalinfo {
+.textbox {
     background-color: #37392E80;
-    margin: 0 15rem;
-    padding: 1rem 1rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    padding: 2rem 4rem;
 }
 
 #links {
     display: flex;
     width: 100%;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
 }
 
-@media (min-width: 768px) {
-    #links ul {
-        width: 100%;
-        margin: 1rem 25rem;
-        display: flex;
-        align-items: center;
-        list-style-type: none;
-        justify-content: space-between;
-    }
+#links ul {
+    width: 100%;
+    margin: 0.5rem 25rem;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    justify-content: space-between;
 }
 
 #links img {
     transition: transform 0.3s ease;
     transform-origin: center center;
+    width: 75px;
+    height: auto;
 }
 
 #links img:hover {
@@ -124,3 +92,87 @@ main {
 #topbar li:hover {
     transform: scale(1.15);
 }
+
+#topbar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#albumcollage {
+    text-align: center;
+}
+
+#albumcollage img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+}
+
+
+/* mobile */
+@media (max-width: 768px) {
+    html, body {
+        background-image: url("./mountainsmobile.jpg");
+        background-attachment: scroll;
+    }
+
+    main {
+        padding-bottom: 2rem;
+        h1 {
+            text-align: center;
+            font-size: 1.2rem;
+            margin: 0;
+        }
+
+        p {
+            text-indent: 2em;
+            font-size: 0.8rem;
+            margin-bottom: 1rem;
+            gap: 0;
+        }
+    }
+    
+    #links {
+        margin-top: 1rem;
+    }
+
+    #links ul {
+        margin: 0 3rem;
+        padding: 0;
+        justify-content: center;
+        gap: 2rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        justify-content: space-between;
+    }
+
+    #links img {
+        width: 50px;
+        height: auto;
+    }
+
+    #topbar ul {
+        padding: 0 1rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        justify-content: space-between;
+    }
+
+    .textbox {
+        margin: 1rem 2rem;
+        padding: 0.5rem 1rem;
+    }
+
+    #albumcollage img {
+        margin-top: 1rem;
+        width: 95%;
+    }
+}
+
+
