@@ -11,26 +11,23 @@ html, body {
 
 main {
     min-height: 100vh;
-    padding-top: 15%;
+    padding-top: 0.5rem;
     color: beige;
     h1 {
-        border-width: 3px;
-        padding-top: 0;
         text-align: center;
-        font-size: 40px;
-        margin: 20px;
+        font-size: 3rem;
+        margin: 0;
     }
     h2 {
-        border-width: 3px;
+        margin-top: 2rem;
         text-align: center;
-        font-size: 40px;
-        margin: 20px;
+        font-size: 3rem;
+        margin-bottom: 0;
     }
     p {
-        border-width: 3px;
-        text-indent: 5%;
-        font-size: 20px;
-        margin: 20px;
+        text-indent: 2em;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
     }
 }
 
@@ -44,9 +41,7 @@ main {
 #links {
     display: flex;
     width: 100%;
-    position: absolute;
-    top: 10vh;
-    left: 0;
+    margin-top: 0.5rem;
 }
 
 #links ul {
@@ -75,9 +70,7 @@ main {
     width: 100%;
     height: 5vh;
     background-color: #37392E80;
-    position: absolute;
-    top: 2vh;
-    left: 0;
+    margin-top: 1rem;
 }
 #topbar ul {
     color: beige;
@@ -86,10 +79,16 @@ main {
     list-style-type: none;
     justify-content: space-between;
 
-    padding: 0 10%;
+    padding: 0 10rem;
     margin-top: 0;
 }
+
 #topbar li {
-    position: relative;
-    top: 8px;
+    margin-top: 1rem;
+    transition: transform 0.3s ease;
+    transform-origin: center center;
+}
+
+#topbar li:hover {
+    transform: scale(1.15);
 }
