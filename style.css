@@ -12,6 +12,7 @@ html, body {
 @media (max-width: 768px) {
     body {
         background-image: url("./intothemoneylandnewmobile.jpg");
+        background-attachment: scroll;
     }
 }
 
@@ -41,7 +42,7 @@ main {
     background-color: #37392E80;
     margin-left: 17%;
     margin-right: 17%;
-    padding: 10px 10px;
+    padding: 1rem 1rem;
 }
 
 #links {
